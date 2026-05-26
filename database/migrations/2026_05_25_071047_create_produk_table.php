@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('short_description')->nullable();
             $table->longText('description')->nullable();
             $table->string('brand')->nullable();
-            $table->decimal('base_price', 10, 2);
+            $table->decimal('base_price', 12, 2);
             $table->unsignedInteger('stock')->default(0);
             $table->string('main_image')->nullable();
             $table->json('benefits')->nullable();

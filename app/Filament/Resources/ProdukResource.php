@@ -79,6 +79,8 @@ class ProdukResource extends Resource
                                 ->image()
                                 ->directory('produk/utama')
                                 ->imageEditor()
+                                ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
+                                ->maxSize(2048) // maks 2MB
                                 ->columnSpanFull(),
 
                             Forms\Components\Repeater::make('gambarProduk')
